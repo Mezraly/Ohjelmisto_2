@@ -30,8 +30,8 @@ for i in range(1, 11):
     rekisterinumero = f"ABC-{i}"
     autot.append(Auto(rekisterinumero, huippunopeus))
 
-kilpailu_jatkuu = True
-while kilpailu_jatkuu:
+kilpailu = True
+while kilpailu:
     for auto in autot:
         nopeuden_muutos = random.randint(-10, 15)
         auto.kiihdyta(nopeuden_muutos)
